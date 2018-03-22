@@ -5,7 +5,6 @@
 1. Instalación de dos máquinas
 2. Acceder por ssh de una máquina a otra
 3. Acceder mediante la herramienta curl desde una máquina a la otra
-4. 
 
 ## Práctica 2. Clonar la información de un sitio web
 
