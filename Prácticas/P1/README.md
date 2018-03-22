@@ -1,4 +1,4 @@
-# Practica 1. Preparación de las herramientas.
+# Practica 1. Preparación de las herramientas
 
 ## Comprobación de que Apache está instalado en las dos maquinas y está en ejecucción 
 

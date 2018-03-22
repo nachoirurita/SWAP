@@ -1,4 +1,4 @@
-# Practica 2. Clonar la información de un sitio web.
+# Práctica 2. Clonar la información de un sitio web.
 
 ## Crear un tar con ficheros locales en un equipo
 
