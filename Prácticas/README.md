@@ -23,3 +23,9 @@
 6. Comprobar el funcionamiento del balanceador.
 7. Someter a una alta carga el servidor balanceado.
 8. Comparacion de balanceadores al someterlos a la misma carga.
+
+## Práctica 4. Asegurar la granja web
+
+1. Instalar un certificado SSL autofirmado para configurar el acceso por HTTPS
+2. Configuración del cortafuegos.
+3. Script para configurar iptables al arrancar.
