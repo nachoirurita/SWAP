@@ -29,3 +29,9 @@
 1. Instalar un certificado SSL autofirmado para configurar el acceso por HTTPS
 2. Configuración del cortafuegos.
 3. Script para configurar iptables al arrancar.
+
+## Práctica 5. Replicación de bases de datos MySQL
+
+1. Crear una BD e insertar datos.
+2. Replicar una BD MySQL con mysqldump.
+3. Replicación de BD mediante una configuración maestro-esclavo.
