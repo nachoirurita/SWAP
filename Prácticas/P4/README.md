@@ -58,6 +58,26 @@ curl –k https://192.168.56.105/hola.html
 
 ![imagen](https://github.com/nachoirurita/SWAP/blob/master/Prácticas/P4/Capturas/captura2.png)
 
+Por último falta que funcione el https en el balanceador, para ello copiamos la pareja de archivos `.crt` y el `.key`.
+
+Los generamos sólo una vez en la máquina 1, y luego los copiamos a todas las demás máquinas de la granja, podemos usar scp:
+
+```
+scp 192.168.56.105:/etc/apache2/ssl/* /tmp/
+``` 
+
+Para finalizar, editamos el archivo `/etc/nginx/conf.d/default.conf ` del balanceador (nginx) y añadimos lo siguiente:
+
+```
+
+listen 443 ssl;
+ssl on;
+ssl_certificate      /tmp/apache.crt;
+ssl_certificate_key  /tmp/apache.key;
+```
+
+![imagen](https://github.com/nachoirurita/SWAP/blob/master/Prácticas/P4/Capturas/captura6.png)
+
 ## Configuración del cortafuegos
 
 ### Configuración del cortafuegos iptables en Linux
