@@ -138,8 +138,6 @@ mysql -u root -p
 START SLAVE;
 ```
 
-![imagen](https://github.com/nachoirurita/SWAP/blob/master/Prácticas/P5/Capturas/captura8.png)
-
 Por último, volvemos al maestro y volvemos a activar las tablas para que puedan meterse nuevos datos en el maestro:
 
 ```
@@ -147,3 +145,4 @@ mysql -u root -p
 UNLOCK TABLES;
 ```
 
+![imagen](https://github.com/nachoirurita/SWAP/blob/master/Prácticas/P5/Capturas/captura8.png)
