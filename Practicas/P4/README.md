@@ -28,7 +28,7 @@ Una vez hecho esto, generamos nuestro certificado SSL, dónde nos pedirá una se
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl/apache.key -out /etc/apache2/ssl/apache.crt
 ```
 
-![imagen](https://github.com/nachoirurita/SWAP/blob/master/Prácticas/P4/Capturas/captura1.png)
+![imagen](https://github.com/nachoirurita/SWAP/blob/master/Practicas/P4/Capturas/captura1.png)
 
 Editamos el archivo de configuración del sitio default-ssl:
 
@@ -56,7 +56,7 @@ Para hacer peticiones por HTTPS utilizando la herramienta curl, ejecutaremos:
 curl –k https://192.168.56.105/hola.html
 ```
 
-![imagen](https://github.com/nachoirurita/SWAP/blob/master/Prácticas/P4/Capturas/captura2.png)
+![imagen](https://github.com/nachoirurita/SWAP/blob/master/Practicas/P4/Capturas/captura2.png)
 
 Por último falta que funcione el https en el balanceador, para ello copiamos la pareja de archivos `.crt` y el `.key`.
 
@@ -76,7 +76,7 @@ ssl_certificate      /tmp/apache.crt;
 ssl_certificate_key  /tmp/apache.key;
 ```
 
-![imagen](https://github.com/nachoirurita/SWAP/blob/master/Prácticas/P4/Capturas/captura6.png)
+![imagen](https://github.com/nachoirurita/SWAP/blob/master/Practicas/P4/Capturas/captura6.png)
 
 ## Configuración del cortafuegos
 
@@ -97,7 +97,7 @@ Para comprobar el estado del cortafuegos, debemos ejecutar:
 iptables –L –n -v
 ```
 
-![imagen](https://github.com/nachoirurita/SWAP/blob/master/Prácticas/P4/Capturas/captura3.png)
+![imagen](https://github.com/nachoirurita/SWAP/blob/master/Practicas/P4/Capturas/captura3.png)
 
 Para lanzar, reiniciar o parar el cortafuegos, y para salvar las reglas establecidas hasta ese momento, ejecutaremos respectivamente:
 
@@ -134,7 +134,7 @@ iptables -A OUTPUT -m state --state NEW,ESTABLISHED,RELATED -j ACCEPT
 
 Volvemos a comprobar el estado del cortafuegos:
 
-![imagen](https://github.com/nachoirurita/SWAP/blob/master/Prácticas/P4/Capturas/captura4.png)
+![imagen](https://github.com/nachoirurita/SWAP/blob/master/Practicas/P4/Capturas/captura4.png)
 
 Y hacemos peticiones desde localhost:
 
@@ -142,7 +142,7 @@ Y hacemos peticiones desde localhost:
 curl -k https://192.168.56.105/hola.html
 ```
 
-![imagen](https://github.com/nachoirurita/SWAP/blob/master/Prácticas/P4/Capturas/captura5.png)
+![imagen](https://github.com/nachoirurita/SWAP/blob/master/Practicas/P4/Capturas/captura5.png)
 
 ## Script para configurar iptables al arrancar
 

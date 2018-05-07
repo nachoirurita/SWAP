@@ -59,7 +59,7 @@ curl http://192.168.56.20
 curl http://192.168.56.20
 ```
 
-![imagen](https://github.com/nachoirurita/SWAP/blob/master/Prácticas/P3/Capturas/captura1.png)
+![imagen](https://github.com/nachoirurita/SWAP/blob/master/Practicas/P3/Capturas/captura1.png)
 
 ## Balanceo de carga ponderado
 
@@ -76,11 +76,11 @@ upstream apaches
 }
 ```
 
-![imagen](https://github.com/nachoirurita/SWAP/blob/master/Prácticas/P3/Capturas/captura2.png)
+![imagen](https://github.com/nachoirurita/SWAP/blob/master/Practicas/P3/Capturas/captura2.png)
 
 Para probarlo, podemos hacer peticiones a la maquina balanceadora y el resultado sería:
 
-![imagen](https://github.com/nachoirurita/SWAP/blob/master/Prácticas/P3/Capturas/captura3.png)
+![imagen](https://github.com/nachoirurita/SWAP/blob/master/Practicas/P3/Capturas/captura3.png)
 
 ## Instalar haproxy
 
@@ -124,7 +124,7 @@ backend servers
 
 ```
 
-![imagen](https://github.com/nachoirurita/SWAP/blob/master/Prácticas/P3/Capturas/captura4.png)
+![imagen](https://github.com/nachoirurita/SWAP/blob/master/Practicas/P3/Capturas/captura4.png)
 
 ## Comprobar el funcionamiento del balanceador
 
@@ -136,7 +136,7 @@ sudo /usr/sbin/haproxy -f /etc/haproxy/haproxy.cfg
 
 Ya podemos realizar peticiones a la IP del balanceador:
 
-![imagen](https://github.com/nachoirurita/SWAP/blob/master/Prácticas/P3/Capturas/captura5.png)
+![imagen](https://github.com/nachoirurita/SWAP/blob/master/Practicas/P3/Capturas/captura5.png)
 
 ## Someter a una alta carga el servidor balanceado
 
@@ -153,7 +153,7 @@ ab -n 50000 -c 300 http://192.168.56.20/prueba.html
 ```
 
 
-![imagen](https://github.com/nachoirurita/SWAP/blob/master/Prácticas/P3/Capturas/captura6.png)
+![imagen](https://github.com/nachoirurita/SWAP/blob/master/Practicas/P3/Capturas/captura6.png)
 
 
 ### Haproxy
@@ -165,7 +165,7 @@ ab -n 50000 -c 300 http://192.168.56.20/prueba.html
 ```
 
 
-![imagen](https://github.com/nachoirurita/SWAP/blob/master/Prácticas/P3/Capturas/captura7.png)
+![imagen](https://github.com/nachoirurita/SWAP/blob/master/Practicas/P3/Capturas/captura7.png)
 
 ## Comparacion de balanceadores al someterlos a la misma carga
 

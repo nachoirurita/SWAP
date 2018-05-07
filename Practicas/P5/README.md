@@ -10,7 +10,7 @@ mysql -uroot -p
 
 Introducimos la `contraseña` y ya estaremos dentro de la terminal de MySQL. Ahora creamos una BD:
 
-![imagen](https://github.com/nachoirurita/SWAP/blob/master/Prácticas/P5/Capturas/captura1.png)
+![imagen](https://github.com/nachoirurita/SWAP/blob/master/Practicas/P5/Capturas/captura1.png)
 
 Como podemos ver, hemos insertado un dato en la BD para asi poder tener algo de lo que hacer copia de seguridad.
 
@@ -47,7 +47,7 @@ scp 192.168.56.105:/tmp/contactos.sql /tmp/
 ```
 
 
-![imagen](https://github.com/nachoirurita/SWAP/blob/master/Prácticas/P5/Capturas/captura2.png)
+![imagen](https://github.com/nachoirurita/SWAP/blob/master/Practicas/P5/Capturas/captura2.png)
 
 Con el archivo de copia de seguridad en el esclavo ya podemos importar la BD completa en el MySQL (maquina2). Para ello, en un primer paso creamos la BD:
 
@@ -57,7 +57,7 @@ CREATE DATABASE ‘ejemplodb’;
 quit
 ``` 
 
-![imagen](https://github.com/nachoirurita/SWAP/blob/master/Prácticas/P5/Capturas/captura3.png)
+![imagen](https://github.com/nachoirurita/SWAP/blob/master/Practicas/P5/Capturas/captura3.png)
 
 Y en un segundo paso restauramos los datos contenidos en la BD:
 
@@ -66,7 +66,7 @@ mysql -u root -p contactos < /tmp/contactos.sql
 ```
 
 
-![imagen](https://github.com/nachoirurita/SWAP/blob/master/Prácticas/P5/Capturas/captura4.png)
+![imagen](https://github.com/nachoirurita/SWAP/blob/master/Practicas/P5/Capturas/captura4.png)
 
 ## Replicación de BD mediante una configuración maestro-esclavo
 
@@ -106,7 +106,7 @@ Guardamos el documento y reiniciamos el servicio:
 /etc/init.d/mysql restart
 ```
 
-![imagen](https://github.com/nachoirurita/SWAP/blob/master/Prácticas/P5/Capturas/captura5.png)
+![imagen](https://github.com/nachoirurita/SWAP/blob/master/Practicas/P5/Capturas/captura5.png)
 
 Si no ha dado ningún error podemos pasar a configurar el mysql del esclavo:
 
@@ -118,11 +118,11 @@ server-id = 2
 
 Guardamos y reiniciamos:
 
-![imagen](https://github.com/nachoirurita/SWAP/blob/master/Prácticas/P5/Capturas/captura6.png)
+![imagen](https://github.com/nachoirurita/SWAP/blob/master/Practicas/P5/Capturas/captura6.png)
 
 Ahora creamos un usuario en el maestro y le damos permisos para la replicación. Dicho usuario será `esclavo` y su contraseña también será `esclavo`.
 
-![imagen](https://github.com/nachoirurita/SWAP/blob/master/Prácticas/P5/Capturas/captura7.png)
+![imagen](https://github.com/nachoirurita/SWAP/blob/master/Practicas/P5/Capturas/captura7.png)
 
 Ahora nos vamos a la maquina del esclavo (maquina2) y le indicamos los datos del maestro y reiniciamos: 
 
@@ -145,4 +145,4 @@ mysql -u root -p
 UNLOCK TABLES;
 ```
 
-![imagen](https://github.com/nachoirurita/SWAP/blob/master/Prácticas/P5/Capturas/captura8.png)
+![imagen](https://github.com/nachoirurita/SWAP/blob/master/Practicas/P5/Capturas/captura8.png)
