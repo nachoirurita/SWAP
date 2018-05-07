@@ -26,4 +26,4 @@ iptables -P FORWARD ACCEPT
 
 El siguiente comando, determina cuáles puertos están escuchando por conexiones TCP desde la red:
 
-![imagen](https://github.com/nachoirurita/SWAP/blob/master/Teoria/imagenes/tema6.png)
+![imagen](https://github.com/nachoirurita/SWAP/blob/master/Teoria/Ejercicios/imagenes/tema6.png)
