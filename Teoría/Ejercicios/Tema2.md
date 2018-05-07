@@ -21,13 +21,14 @@ ISP           |95%        |99.75%        |99.2035%      |
 
 ## 3. ¿Cómo analizar el nivel de carga de cada uno de los subsistemas en el servidor? Buscar herramientas y aprender a usarlas.
 
-Usando una herramienta que monitorice cada servicio por separado. Por ejemplo podemos usar:
+Usando una herramienta que monitorice cada servicio por separado. 
+Por ejemplo podemos usar:
 
 *Munin:* presenta gráficos de carga de distintos servicios y componentes de un servidor.
 
 ## 4. Buscar ejemplos de balanceadores software y hardware (productos comerciales). Buscar productos comerciales para servidores de aplicaciones. Buscar productos comerciales para servidores de almacenamiento.
 
-### Balanceadores de carga software:
+### Balanceadores de carga software:
 `nginx` permite actuar como un balanceador de carga HTTP.
 
 ### Balanceadores de carga hardware:
