@@ -1,6 +1,6 @@
 # Ejercicios del Tema 2
 
-## 1.Calcular la disponibilidad del sistema si tenemos dos réplicas de cada elemento (en total 3 elementos en cada subsistema).
+## 1. Calcular la disponibilidad del sistema si tenemos dos réplicas de cada elemento (en total 3 elementos en cada subsistema).
 
 | Componentes |   Normal  |   Duplicado  |   Triplicado |
 |:------------|----------:|-------------:|-------------:|
@@ -13,7 +13,7 @@ Switch        |99%        |99.99%        |99.9999%      |
 Data Center   |99.99%     |99.99%        |99.99%        |
 ISP           |95%        |99.75%        |99.2035%      |
 
-## 2.Buscar frameworks y librerías para diferentes lenguajes que permitan hacer aplicaciones altamente disponibles con relativa facilidad.
+## 2. Buscar frameworks y librerías para diferentes lenguajes que permitan hacer aplicaciones altamente disponibles con relativa facilidad.
 
 1. *AngularJS:* es un framework de JavaScript de código abierto, mantenido por Google, que se utiliza para crear y mantener aplicaciones web de una sola página. Su objetivo es aumentar las aplicaciones basadas en navegador con capacidad de Modelo Vista Controlador (MVC), en un esfuerzo para hacer que el desarrollo y las pruebas sean más fáciles. Se puede combinar con el entorno en tiempo de ejecución Node.js, el framework para servidor Express.js y la base de datos MongoDB para formar el conjunto MEAN.
 
